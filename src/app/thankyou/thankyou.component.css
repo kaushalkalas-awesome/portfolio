@@ -1,0 +1,49 @@
+.thankyou-section {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Confetti basic styling */
+.confetti-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background-color: #ffc107;
+  opacity: 0.8;
+  animation: confetti-fall 3s linear infinite;
+}
+
+.confetti:nth-child(2) { left: 20%; background-color: #28a745; animation-delay: 0.5s; }
+.confetti:nth-child(3) { left: 40%; background-color: #17a2b8; animation-delay: 1s; }
+.confetti:nth-child(4) { left: 60%; background-color: #dc3545; animation-delay: 1.5s; }
+.confetti:nth-child(5) { left: 80%; background-color: #6f42c1; animation-delay: 2s; }
+
+@keyframes confetti-fall {
+  0% { top: -10%; transform: rotate(0deg); }
+  100% { top: 100%; transform: rotate(360deg); }
+}
+
+.flip-counter {
+  display: inline-block;
+  perspective: 1000px;
+  animation: flip 1s ease-in-out forwards;
+}
+
+@keyframes flip {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(180deg); }
+  100% { transform: rotateX(360deg); }
+}

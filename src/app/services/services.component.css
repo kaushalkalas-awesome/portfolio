@@ -1,0 +1,174 @@
+/* Services Section Base */
+.services-section {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+}
+
+/* Hero Section */
+.services-hero-img {
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.services-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Service Card Base Style */
+.service-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  position: relative;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list i {
+  font-size: 1.2rem;
+}
+
+/* Pricing */
+.price {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Most Popular Standout Style */
+.service-card.most-popular {
+  border: 2px solid #ffc107;
+  background: linear-gradient(135deg, #fff8e1, #fffde7);
+  transform: scale(1.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.most-popular .badge {
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Buttons Adjustments */
+.service-card a.btn {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+/* Section Headings */
+.services-section h3 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+}
+
+/* Optional Divider Under Headings */
+.services-section h3::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #ffc107;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* Responsive to match About section pattern */
+@media (max-width: 768px) {
+  /* Hero section height to match about-hero */
+  .services-hero-img {
+    height: 40vh;
+  }
+  
+  /* Overlay heading to match about-overlay h2 */
+  .services-overlay h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Overlay paragraph to match about-overlay p */
+  .services-overlay p {
+    font-size: 1rem;
+  }
+  
+  /* Additional services-specific responsive adjustments */
+  .services-overlay {
+    padding: 1.5rem;
+  }
+  
+  .services-section h3 {
+    font-size: 1.8rem;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  
+  .service-card {
+    padding: 20px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-card.most-popular {
+    transform: none;
+    margin-bottom: 2rem;
+  }
+  
+  .service-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-list li {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-list i {
+    font-size: 1.1rem;
+  }
+  
+  .price {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card a.btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  
+  .most-popular .badge {
+    font-size: 12px;
+    padding: 4px 10px;
+    top: -10px;
+  }
+}

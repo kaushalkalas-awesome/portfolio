@@ -1,0 +1,124 @@
+.footer-section {
+  background: #343a40;
+  font-family: 'Poppins', sans-serif;
+  border-top: 3px solid #F9A825;
+}
+
+.footer-section h5 {
+  color: #F9A825;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer-section p,
+.footer-section li {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.custom-cta {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  background-color: #F9A825;
+  color: #0d1b2a;
+  border: none;
+}
+
+.custom-cta:hover {
+  color: #0d1b2a;
+  text-decoration: none;
+  transform: translateX(0);
+  animation: subtleShake 0.4s ease-in-out;
+}
+
+@keyframes subtleShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #F4F4F9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #F9A825;
+  text-shadow: 0 0 3px rgba(249, 168, 37, 0.5);
+}
+
+.social-icons a {
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px) scale(1.15);
+  color: #F9A825 !important;
+}
+
+.social-icons i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #ffffff;
+}
+
+.social-icons i:hover {
+  transform: scale(1.1);
+  color: #F9A825;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-section .container {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* ✅ RESPONSIVE PART STARTS HERE */
+
+@media (max-width: 768px) {
+  .footer-section h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .custom-cta {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .footer-section p,
+  .footer-section li {
+    font-size: 0.9rem;
+  }
+
+  .social-icons i {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-link {
+    display: block;
+  }
+
+  .social-icons {
+    justify-content: left;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+}
