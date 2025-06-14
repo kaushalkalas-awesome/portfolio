@@ -2,9 +2,12 @@
   "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
-    "dev:ssr": "ng run portfolio:serve-ssr",
-    "build:ssr": "ng build && ng run portfolio:server",
-    "start": "node dist/portfolio/server/main.js"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
   },
   "private": true,
   "dependencies": {
