@@ -23,6 +23,7 @@
     "@angular/ssr": "^19.2.8",
     "@emailjs/browser": "^4.4.1",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "@nguniversal/express-engine": "^7.0.2",
     "@popperjs/core": "^2.11.8",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
